@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,26 +12,26 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="62e-jF-e11">
-                                <rect key="frame" x="87.666666666666686" y="306" width="200" height="200"/>
+                                <rect key="frame" x="103.66666666666669" y="313.66666666666663" width="207" height="268.66666666666663"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PXz-dr-xMB">
-                                <rect key="frame" x="177.66666666666666" y="553" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PXz-dr-xMB">
+                                <rect key="frame" x="189.66666666666666" y="625.33333333333337" width="34.666666666666657" height="45"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcA-ji-8Sp">
-                                <rect key="frame" x="157.66666666666666" y="581" width="60" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OcA-ji-8Sp">
+                                <rect key="frame" x="165.66666666666666" y="680" width="82.666666666666657" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid Challenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-mI-MxU">
-                                <rect key="frame" x="70.666666666666686" y="227" width="234" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid Challenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yo9-mI-MxU">
+                                <rect key="frame" x="69" y="196" width="276" height="61"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,20 +40,27 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Yo9-mI-MxU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="43y-pf-cgc"/>
-                            <constraint firstItem="62e-jF-e11" firstAttribute="top" secondItem="Yo9-mI-MxU" secondAttribute="bottom" constant="44" id="BJR-Vj-Xt2"/>
+                            <constraint firstItem="PXz-dr-xMB" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1/20" id="CPX-Cx-0dy"/>
                             <constraint firstItem="OcA-ji-8Sp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dta-ze-6Xs"/>
-                            <constraint firstItem="OcA-ji-8Sp" firstAttribute="firstBaseline" secondItem="PXz-dr-xMB" secondAttribute="baseline" constant="24.333333333333332" symbolType="layoutAnchor" id="NiR-aW-ZJL"/>
-                            <constraint firstItem="PXz-dr-xMB" firstAttribute="top" secondItem="62e-jF-e11" secondAttribute="bottom" constant="47" id="TUb-Tv-BQY"/>
+                            <constraint firstItem="Yo9-mI-MxU" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="2/3" id="EgV-cv-3sg"/>
+                            <constraint firstItem="OcA-ji-8Sp" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1/5" id="I6S-nB-bDn"/>
+                            <constraint firstItem="PXz-dr-xMB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.43" id="JtX-7L-uqa"/>
+                            <constraint firstItem="PXz-dr-xMB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1/12" id="MyS-N8-iRg"/>
+                            <constraint firstItem="OcA-ji-8Sp" firstAttribute="firstBaseline" secondItem="PXz-dr-xMB" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="NiR-aW-ZJL"/>
+                            <constraint firstItem="Yo9-mI-MxU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1/2" id="Pep-T0-Wm6"/>
+                            <constraint firstItem="OcA-ji-8Sp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1/22" id="amW-bZ-r06"/>
                             <constraint firstItem="62e-jF-e11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b3X-T0-rz9"/>
                             <constraint firstItem="62e-jF-e11" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cWN-7Y-HRT"/>
+                            <constraint firstItem="62e-jF-e11" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1/2" id="hwQ-SI-0LZ"/>
                             <constraint firstItem="PXz-dr-xMB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jMm-TU-9jP"/>
+                            <constraint firstItem="62e-jF-e11" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="qfu-1h-AlO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="1911"/>
+            <point key="canvasLocation" x="-367.5" y="1910"/>
         </scene>
     </scenes>
     <resources>

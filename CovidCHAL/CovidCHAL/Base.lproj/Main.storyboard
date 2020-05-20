@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tog-OM-RCq">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,37 +12,38 @@
             <objects>
                 <viewController id="5AR-RZ-8V5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tB0-CQ-WYK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="14H-Fb-N2X"/>
+                        <viewLayoutGuide key="safeArea" id="6lZ-qA-77y"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exercise" image="hare" catalog="system" landscapeImage="hare" largeContentSizeImage="hare" selectedImage="hare" id="xJO-7F-vdF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWv-VG-rdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1328" y="31"/>
+            <point key="canvasLocation" x="491.304347826087" y="30.803571428571427"/>
         </scene>
         <!--Achievement-->
         <scene sceneID="HEQ-Np-mJC">
             <objects>
                 <viewController id="huK-HJ-zyv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IHo-pi-bs8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="fsQ-Jm-ZDF"/>
+                        <viewLayoutGuide key="safeArea" id="Hqq-pj-Ysl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Achievement" image="rosette" catalog="system" landscapeImage="rosette" largeContentSizeImage="rosette" selectedImage="rosette" id="Sn1-I4-aN1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Jh-0l-LY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="-602"/>
+            <point key="canvasLocation" x="1450.7246376811595" y="-602.00892857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lQe-hu-OzG">
             <objects>
                 <tabBarController id="tog-OM-RCq" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBar key="tabBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="hiM-Um-FHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,10 +52,10 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ypQ-BE-Kic"/>
-                        <segue destination="5AR-RZ-8V5" kind="relationship" relationship="viewControllers" id="fwC-kL-fZA"/>
-                        <segue destination="huK-HJ-zyv" kind="relationship" relationship="viewControllers" id="BDP-a1-02G"/>
-                        <segue destination="tv3-iz-dex" kind="relationship" relationship="viewControllers" id="OxC-li-JyL"/>
+                        <segue destination="vmU-8J-DO4" kind="relationship" relationship="viewControllers" id="KpC-39-TwB"/>
+                        <segue destination="5AR-RZ-8V5" kind="relationship" relationship="viewControllers" id="nhZ-MS-d1L"/>
+                        <segue destination="huK-HJ-zyv" kind="relationship" relationship="viewControllers" id="A2J-k3-HuZ"/>
+                        <segue destination="iR3-ZM-qGz" kind="relationship" relationship="viewControllers" id="RRV-M2-B8G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7D-O6-Bp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -66,36 +67,95 @@
             <objects>
                 <viewController id="tv3-iz-dex" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brL-B9-1aP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="IAI-3p-FHn"/>
+                        <viewLayoutGuide key="safeArea" id="G7T-AR-IaR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact" image="phone" catalog="system" landscapeImage="phone" largeContentSizeImage="phone" selectedImage="phone" id="wPe-Rp-agz"/>
+                    <navigationItem key="navigationItem" title="Contact" largeTitleDisplayMode="never" id="yWL-In-9v6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5A-lG-tud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="-1297"/>
+            <point key="canvasLocation" x="213.04347826086959" y="-1297.0982142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidCHAL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RzF-o6-KJm">
+                                <rect key="frame" x="0.0" y="140" width="375" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14115631579999999" green="0.1411880851" blue="0.1411542892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="RzF-o6-KJm" firstAttribute="leading" secondItem="k0t-u7-XQK" secondAttribute="leading" id="2Q5-sv-IBz"/>
+                            <constraint firstItem="RzF-o6-KJm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Okl-8B-YBC"/>
+                            <constraint firstItem="k0t-u7-XQK" firstAttribute="trailing" secondItem="RzF-o6-KJm" secondAttribute="trailing" id="fgm-MM-hpu"/>
+                            <constraint firstItem="RzF-o6-KJm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="gwa-OJ-mlX"/>
+                            <constraint firstItem="RzF-o6-KJm" firstAttribute="top" secondItem="k0t-u7-XQK" secondAttribute="top" id="oFx-MF-mZs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k0t-u7-XQK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" landscapeImage="house" largeContentSizeImage="house" selectedImage="house" id="9WH-C5-X4c">
-                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Home" id="tP2-cT-msz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2543" y="4"/>
+            <point key="canvasLocation" x="-836.23188405797111" y="0.6696428571428571"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iXq-V8-gTA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="vmU-8J-DO4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" landscapeImage="house" largeContentSizeImage="house" selectedImage="house" id="VPZ-Va-gA3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" largeTitles="YES" id="wAX-VZ-EEi">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0HC-DX-6C3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o7n-cY-e4Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dG9-tk-Y92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1746.376811594203" y="0.6696428571428571"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="URQ-6T-uOG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iR3-ZM-qGz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="phone" catalog="system" landscapeImage="phone" largeContentSizeImage="phone" selectedImage="phone" id="wPe-Rp-agz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" translucent="NO" id="CQK-Y0-KU9">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.14115631579999999" green="0.1411880851" blue="0.1411542892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" red="0.14115631579999999" green="0.1411880851" blue="0.1411542892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tv3-iz-dex" kind="relationship" relationship="rootViewController" id="Ple-fm-bO5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJ1-iD-naC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697.10144927536237" y="-1297.0982142857142"/>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
     <resources>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="house" catalog="system" width="128" height="110"/>
