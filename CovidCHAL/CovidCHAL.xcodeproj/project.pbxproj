@@ -13,6 +13,7 @@
 		874CD08E2473F56000F8FB47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CD08C2473F56000F8FB47 /* Main.storyboard */; };
 		874CD0902473F56200F8FB47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CD08F2473F56200F8FB47 /* Assets.xcassets */; };
 		874CD0932473F56200F8FB47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CD0912473F56200F8FB47 /* LaunchScreen.storyboard */; };
+		8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783733324769283000E43C7 /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		874CD08F2473F56200F8FB47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874CD0922473F56200F8FB47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874CD0942473F56200F8FB47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8783733324769283000E43C7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				874CD0862473F56000F8FB47 /* AppDelegate.swift */,
 				874CD0882473F56000F8FB47 /* SceneDelegate.swift */,
 				874CD08A2473F56000F8FB47 /* ViewController.swift */,
+				8783733324769283000E43C7 /* HomeTableViewCell.swift */,
 				874CD08C2473F56000F8FB47 /* Main.storyboard */,
 				874CD08F2473F56200F8FB47 /* Assets.xcassets */,
 				874CD0912473F56200F8FB47 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				874CD08B2473F56000F8FB47 /* ViewController.swift in Sources */,
 				874CD0872473F56000F8FB47 /* AppDelegate.swift in Sources */,
+				8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */,
 				874CD0892473F56000F8FB47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
