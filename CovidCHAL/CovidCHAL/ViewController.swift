@@ -6,6 +6,7 @@
 //  Copyright © 2020 PeterDao. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import SafariServices
 
@@ -29,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Update the lastest COVID-19 news by your state:"
+        return "Update the lastest COVID-19 news by states:"
     }
 
 
@@ -41,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "CELL") as! HomeTableViewCell
         cell.countryView.image = UIImage(named: stateImage[indexPath.row])
         cell.stateName.text = stateName[indexPath.row]
-        print(indexPath.row)
+    
         return cell
     }
     
@@ -81,6 +82,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true)
     }
+    
+    
+    
 }
+
 
 

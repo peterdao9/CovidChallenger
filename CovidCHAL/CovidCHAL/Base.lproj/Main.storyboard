@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tog-OM-RCq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tog-OM-RCq">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -65,23 +65,78 @@
         <!--Contact-->
         <scene sceneID="xSf-VI-eZX">
             <objects>
-                <viewController id="tv3-iz-dex" sceneMemberID="viewController">
+                <viewController id="tv3-iz-dex" customClass="ContractViewController" customModule="CovidCHAL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brL-B9-1aP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="000" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vu-Ab-mlF">
+                                <rect key="frame" x="18.666666666666657" y="39.666666666666671" width="337.66666666666674" height="241.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call Triple Zero 000" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-lI-tmf">
+                                <rect key="frame" x="37.666666666666671" y="49.333333333333343" width="168.66666666666663" height="32.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="If you need any help, please call 000 for any assistance." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-p4-276">
+                                <rect key="frame" x="36.333333333333343" y="94.333333333333343" width="302.33333333333326" height="105.33333333333334"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaW-RF-TMm">
+                                <rect key="frame" x="164.66666666666666" y="226" width="45.666666666666657" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="contactButton1:" destination="tv3-iz-dex" eventType="touchUpInside" id="mE3-bg-gmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-Oz-uyq">
+                                <rect key="frame" x="164.66666666666666" y="305.66666666666669" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sandMailButton:" destination="tv3-iz-dex" eventType="touchUpInside" id="7WU-gQ-Jbz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9vu-Ab-mlF" firstAttribute="height" secondItem="brL-B9-1aP" secondAttribute="height" multiplier="1/3" id="1Xm-up-pd1"/>
+                            <constraint firstItem="sdk-p4-276" firstAttribute="width" secondItem="9vu-Ab-mlF" secondAttribute="width" multiplier="0.896243" id="3xa-r0-0QJ"/>
+                            <constraint firstItem="vaW-RF-TMm" firstAttribute="bottom" secondItem="9vu-Ab-mlF" secondAttribute="bottom" constant="-25" id="5Ex-P7-voK"/>
+                            <constraint firstItem="zrn-lI-tmf" firstAttribute="width" secondItem="9vu-Ab-mlF" secondAttribute="width" multiplier="0.5" id="5gW-GL-jg5"/>
+                            <constraint firstItem="h0i-Oz-uyq" firstAttribute="centerX" secondItem="G7T-AR-IaR" secondAttribute="centerX" id="AK7-IM-1nF"/>
+                            <constraint firstItem="h0i-Oz-uyq" firstAttribute="height" secondItem="brL-B9-1aP" secondAttribute="height" multiplier="0.0414365" id="CA6-jO-irE"/>
+                            <constraint firstItem="9vu-Ab-mlF" firstAttribute="centerX" secondItem="G7T-AR-IaR" secondAttribute="centerX" id="Dnf-bZ-NBZ"/>
+                            <constraint firstItem="sdk-p4-276" firstAttribute="height" secondItem="9vu-Ab-mlF" secondAttribute="height" multiplier="0.415842" constant="5" id="Dv0-AJ-WhT"/>
+                            <constraint firstItem="vaW-RF-TMm" firstAttribute="height" secondItem="9vu-Ab-mlF" secondAttribute="height" multiplier="0.124309" id="EqA-aE-02B"/>
+                            <constraint firstItem="vaW-RF-TMm" firstAttribute="width" secondItem="9vu-Ab-mlF" secondAttribute="width" multiplier="0.136229" id="GnL-ae-IgL"/>
+                            <constraint firstItem="h0i-Oz-uyq" firstAttribute="width" secondItem="brL-B9-1aP" secondAttribute="width" multiplier="0.122667" id="IWL-Da-HeN"/>
+                            <constraint firstItem="zrn-lI-tmf" firstAttribute="centerX" secondItem="9vu-Ab-mlF" secondAttribute="centerX" multiplier="0.65" id="Iav-6r-Ocx"/>
+                            <constraint firstItem="zrn-lI-tmf" firstAttribute="height" secondItem="9vu-Ab-mlF" secondAttribute="height" multiplier="0.134615" id="d0F-Gh-F7k"/>
+                            <constraint firstItem="vaW-RF-TMm" firstAttribute="centerX" secondItem="9vu-Ab-mlF" secondAttribute="centerX" id="dpc-er-j2Z"/>
+                            <constraint firstItem="9vu-Ab-mlF" firstAttribute="width" secondItem="brL-B9-1aP" secondAttribute="width" multiplier="0.9" id="fI9-3o-8aA"/>
+                            <constraint firstItem="sdk-p4-276" firstAttribute="centerX" secondItem="9vu-Ab-mlF" secondAttribute="centerX" id="fY8-AS-NNF"/>
+                            <constraint firstItem="sdk-p4-276" firstAttribute="top" secondItem="zrn-lI-tmf" secondAttribute="bottom" multiplier="1.15" id="fjE-Bs-vyo"/>
+                            <constraint firstItem="zrn-lI-tmf" firstAttribute="top" secondItem="9vu-Ab-mlF" secondAttribute="top" multiplier="1.25" id="n35-Ad-USw"/>
+                            <constraint firstItem="h0i-Oz-uyq" firstAttribute="centerY" secondItem="G7T-AR-IaR" secondAttribute="centerY" id="qEs-Au-Dvr"/>
+                            <constraint firstItem="9vu-Ab-mlF" firstAttribute="centerY" secondItem="G7T-AR-IaR" secondAttribute="centerY" multiplier="0.5" id="vFr-EP-VJ5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G7T-AR-IaR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" largeTitleDisplayMode="never" id="yWL-In-9v6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5A-lG-tud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213.04347826086959" y="-1297.0982142857142"/>
+            <point key="canvasLocation" x="211.59420289855075" y="-1297.7678571428571"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidCHAL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CovidCHAL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,6 +255,7 @@
     </scenes>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
     <resources>
+        <image name="000" width="500" height="300"/>
         <image name="hare" catalog="system" width="128" height="92"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="phone" catalog="system" width="128" height="115"/>

@@ -14,6 +14,8 @@
 		874CD0902473F56200F8FB47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CD08F2473F56200F8FB47 /* Assets.xcassets */; };
 		874CD0932473F56200F8FB47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CD0912473F56200F8FB47 /* LaunchScreen.storyboard */; };
 		8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783733324769283000E43C7 /* HomeTableViewCell.swift */; };
+		878584812477F6F6000E0E40 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878584802477F6F6000E0E40 /* MessageUI.framework */; };
+		87858485247803EC000E0E40 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87858484247803EC000E0E40 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		874CD0922473F56200F8FB47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874CD0942473F56200F8FB47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8783733324769283000E43C7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		878584802477F6F6000E0E40 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		87858484247803EC000E0E40 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878584812477F6F6000E0E40 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				874CD0852473F56000F8FB47 /* CovidCHAL */,
 				874CD0842473F56000F8FB47 /* Products */,
+				8785847F2477F6F6000E0E40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +68,21 @@
 				874CD0882473F56000F8FB47 /* SceneDelegate.swift */,
 				874CD08A2473F56000F8FB47 /* ViewController.swift */,
 				8783733324769283000E43C7 /* HomeTableViewCell.swift */,
+				87858484247803EC000E0E40 /* ContactViewController.swift */,
 				874CD08C2473F56000F8FB47 /* Main.storyboard */,
 				874CD08F2473F56200F8FB47 /* Assets.xcassets */,
 				874CD0912473F56200F8FB47 /* LaunchScreen.storyboard */,
 				874CD0942473F56200F8FB47 /* Info.plist */,
 			);
 			path = CovidCHAL;
+			sourceTree = "<group>";
+		};
+		8785847F2477F6F6000E0E40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878584802477F6F6000E0E40 /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87858485247803EC000E0E40 /* ContactViewController.swift in Sources */,
 				874CD08B2473F56000F8FB47 /* ViewController.swift in Sources */,
 				874CD0872473F56000F8FB47 /* AppDelegate.swift in Sources */,
 				8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */,
