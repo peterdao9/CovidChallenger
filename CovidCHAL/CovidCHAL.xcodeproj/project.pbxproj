@@ -16,6 +16,8 @@
 		8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783733324769283000E43C7 /* HomeTableViewCell.swift */; };
 		878584812477F6F6000E0E40 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878584802477F6F6000E0E40 /* MessageUI.framework */; };
 		87858485247803EC000E0E40 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87858484247803EC000E0E40 /* ContactViewController.swift */; };
+		87F36F25247AB945004D759C /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F36F24247AB945004D759C /* ExerciseViewController.swift */; };
+		87F36F2D247AB9C3004D759C /* RelaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F36F2C247AB9C3004D759C /* RelaxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8783733324769283000E43C7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		878584802477F6F6000E0E40 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		87858484247803EC000E0E40 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		87F36F24247AB945004D759C /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		87F36F2C247AB9C3004D759C /* RelaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,7 @@
 			children = (
 				874CD0862473F56000F8FB47 /* AppDelegate.swift */,
 				874CD0882473F56000F8FB47 /* SceneDelegate.swift */,
-				874CD08A2473F56000F8FB47 /* ViewController.swift */,
-				8783733324769283000E43C7 /* HomeTableViewCell.swift */,
-				87858484247803EC000E0E40 /* ContactViewController.swift */,
+				87F36F2E247AB9D2004D759C /* ViewController */,
 				874CD08C2473F56000F8FB47 /* Main.storyboard */,
 				874CD08F2473F56200F8FB47 /* Assets.xcassets */,
 				874CD0912473F56200F8FB47 /* LaunchScreen.storyboard */,
@@ -83,6 +85,18 @@
 				878584802477F6F6000E0E40 /* MessageUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87F36F2E247AB9D2004D759C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				874CD08A2473F56000F8FB47 /* ViewController.swift */,
+				8783733324769283000E43C7 /* HomeTableViewCell.swift */,
+				87F36F24247AB945004D759C /* ExerciseViewController.swift */,
+				87F36F2C247AB9C3004D759C /* RelaxViewController.swift */,
+				87858484247803EC000E0E40 /* ContactViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +174,8 @@
 				874CD08B2473F56000F8FB47 /* ViewController.swift in Sources */,
 				874CD0872473F56000F8FB47 /* AppDelegate.swift in Sources */,
 				8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */,
+				87F36F2D247AB9C3004D759C /* RelaxViewController.swift in Sources */,
+				87F36F25247AB945004D759C /* ExerciseViewController.swift in Sources */,
 				874CD0892473F56000F8FB47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterdao.CovidCHAL;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CovidCHAL;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterdao.CovidCHAL;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CovidCHAL;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
