@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="-998.55072463768124" y="200.89285714285714"/>
         </scene>
-        <!--Your highest score-->
+        <!--Your Highest Score-->
         <scene sceneID="FCu-L0-xpS">
             <objects>
                 <viewController id="mtN-sA-Ll6" customClass="ExerciseViewController" customModule="CovidCHAL" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,23 +103,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Highest Score is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-36-xcn">
-                                <rect key="frame" x="125" y="421.66666666666669" width="164" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Highest Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-36-xcn">
+                                <rect key="frame" x="49.666666666666657" y="238.66666666666666" width="314.66666666666674" height="84.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-af-yDF">
+                                <rect key="frame" x="103.66666666666669" y="326.33333333333331" width="207" height="168.33333333333331"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exercise" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-3u-QPS">
+                                <rect key="frame" x="51.666666666666657" y="547.33333333333337" width="310.66666666666674" height="252.66666666666663"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay safe, do your job well, have a beautiful day and relax your wrist as needed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-Zi-zEe">
+                                <rect key="frame" x="31" y="81.333333333333314" width="352" height="96.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="L9f-36-xcn" firstAttribute="height" secondItem="pnt-ZP-2dr" secondAttribute="height" multiplier="0.0249406" id="4hQ-vX-XHh"/>
-                            <constraint firstItem="L9f-36-xcn" firstAttribute="width" secondItem="pnt-ZP-2dr" secondAttribute="width" multiplier="0.396135" id="PFK-Lm-27E"/>
+                            <constraint firstItem="4I9-af-yDF" firstAttribute="width" secondItem="pnt-ZP-2dr" secondAttribute="width" multiplier="0.5" id="0ZE-lT-1wV"/>
+                            <constraint firstItem="L9f-36-xcn" firstAttribute="height" secondItem="pnt-ZP-2dr" secondAttribute="height" multiplier="0.1" id="4hQ-vX-XHh"/>
+                            <constraint firstItem="5hL-Zi-zEe" firstAttribute="centerY" secondItem="YfJ-gg-qHV" secondAttribute="centerY" multiplier="0.3" id="5bQ-SU-e9i"/>
+                            <constraint firstItem="5hL-Zi-zEe" firstAttribute="centerX" secondItem="YfJ-gg-qHV" secondAttribute="centerX" id="72A-ft-I70"/>
+                            <constraint firstItem="5hL-Zi-zEe" firstAttribute="height" secondItem="pnt-ZP-2dr" secondAttribute="height" multiplier="0.115" id="9cj-y5-cxL"/>
+                            <constraint firstItem="L9f-36-xcn" firstAttribute="width" secondItem="pnt-ZP-2dr" secondAttribute="width" multiplier="0.76" id="PFK-Lm-27E"/>
+                            <constraint firstItem="4I9-af-yDF" firstAttribute="centerY" secondItem="YfJ-gg-qHV" secondAttribute="centerY" multiplier="0.95" id="PWe-rO-wru"/>
+                            <constraint firstItem="4I9-af-yDF" firstAttribute="centerX" secondItem="YfJ-gg-qHV" secondAttribute="centerX" id="UzU-i9-ufh"/>
+                            <constraint firstItem="pcH-3u-QPS" firstAttribute="centerX" secondItem="YfJ-gg-qHV" secondAttribute="centerX" id="VH7-M7-ywT"/>
+                            <constraint firstItem="5hL-Zi-zEe" firstAttribute="width" secondItem="pnt-ZP-2dr" secondAttribute="width" multiplier="0.85" id="auQ-13-jpk"/>
                             <constraint firstItem="L9f-36-xcn" firstAttribute="centerX" secondItem="YfJ-gg-qHV" secondAttribute="centerX" id="i73-BC-7dj"/>
-                            <constraint firstItem="L9f-36-xcn" firstAttribute="centerY" secondItem="YfJ-gg-qHV" secondAttribute="centerY" id="jLd-Yu-Opo"/>
+                            <constraint firstItem="L9f-36-xcn" firstAttribute="centerY" secondItem="YfJ-gg-qHV" secondAttribute="centerY" multiplier="0.65" id="jLd-Yu-Opo"/>
+                            <constraint firstItem="pcH-3u-QPS" firstAttribute="width" secondItem="pnt-ZP-2dr" secondAttribute="width" multiplier="0.75" id="nJq-y5-soU"/>
+                            <constraint firstItem="pcH-3u-QPS" firstAttribute="bottom" secondItem="YfJ-gg-qHV" secondAttribute="bottom" multiplier="0.99" id="skf-QP-wSo"/>
+                            <constraint firstItem="pcH-3u-QPS" firstAttribute="height" secondItem="pnt-ZP-2dr" secondAttribute="height" multiplier="0.3" id="vJJ-Zu-q6I"/>
+                            <constraint firstItem="4I9-af-yDF" firstAttribute="height" secondItem="pnt-ZP-2dr" secondAttribute="height" multiplier="0.2" id="xiC-f2-Zw0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YfJ-gg-qHV"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Your highest score" id="ht2-7J-TWw">
+                    <navigationItem key="navigationItem" title="Your Highest Score" id="ht2-7J-TWw">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="g5t-IV-Q0g">
                             <color key="tintColor" red="0.13679185102837435" green="0.92549789507772018" blue="0.31865208836352571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -131,7 +158,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IyA-Mg-Ufe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="w0R-4L-keK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="700" y="209.59821428571428"/>
+            <point key="canvasLocation" x="832" y="201"/>
         </scene>
         <!--Relax-->
         <scene sceneID="HEQ-Np-mJC">
@@ -468,7 +495,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmS-NN-Nd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210.1449275362319" y="209.59821428571428"/>
+            <point key="canvasLocation" x="-128" y="201"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
