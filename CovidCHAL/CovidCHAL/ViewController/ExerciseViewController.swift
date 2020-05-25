@@ -11,16 +11,12 @@ import UIKit
 class ExerciseViewController: UIViewController {
     
     @IBAction func exitExercise(segue: UIStoryboardSegue){
-        
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
     }
     
-
-   
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+    }
+    
+    
 }

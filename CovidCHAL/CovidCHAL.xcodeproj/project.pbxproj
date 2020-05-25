@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8700F5AA247BE8CB00851F54 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700F5A9247BE8CB00851F54 /* StartViewController.swift */; };
+		8700F5AC247BE95100851F54 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700F5AB247BE95100851F54 /* AchievementViewController.swift */; };
 		874CD0872473F56000F8FB47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CD0862473F56000F8FB47 /* AppDelegate.swift */; };
 		874CD0892473F56000F8FB47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CD0882473F56000F8FB47 /* SceneDelegate.swift */; };
 		874CD08B2473F56000F8FB47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CD08A2473F56000F8FB47 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8700F5A9247BE8CB00851F54 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		8700F5AB247BE95100851F54 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		874CD0832473F56000F8FB47 /* CovidCHAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidCHAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		874CD0862473F56000F8FB47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		874CD0882473F56000F8FB47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				874CD08A2473F56000F8FB47 /* ViewController.swift */,
 				8783733324769283000E43C7 /* HomeTableViewCell.swift */,
 				87F36F24247AB945004D759C /* ExerciseViewController.swift */,
+				8700F5A9247BE8CB00851F54 /* StartViewController.swift */,
+				8700F5AB247BE95100851F54 /* AchievementViewController.swift */,
 				87F36F2C247AB9C3004D759C /* RelaxViewController.swift */,
 				87858484247803EC000E0E40 /* ContactViewController.swift */,
 			);
@@ -171,12 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				87858485247803EC000E0E40 /* ContactViewController.swift in Sources */,
+				8700F5AA247BE8CB00851F54 /* StartViewController.swift in Sources */,
 				874CD08B2473F56000F8FB47 /* ViewController.swift in Sources */,
 				874CD0872473F56000F8FB47 /* AppDelegate.swift in Sources */,
 				8783733424769283000E43C7 /* HomeTableViewCell.swift in Sources */,
 				87F36F2D247AB9C3004D759C /* RelaxViewController.swift in Sources */,
 				87F36F25247AB945004D759C /* ExerciseViewController.swift in Sources */,
 				874CD0892473F56000F8FB47 /* SceneDelegate.swift in Sources */,
+				8700F5AC247BE95100851F54 /* AchievementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
