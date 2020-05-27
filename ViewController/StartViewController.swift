@@ -26,26 +26,23 @@ class StartViewController: UIViewController {
 
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         
-        y = y - 50
-        if self.y >= 400 {
+        y = y - 30
+        if self.y >= 420 {
             let sb = UIStoryboard(name: "Main", bundle: nil)
-             let scoreScreen = sb.instantiateViewController(identifier: "Score") as! AchievementViewController
+            let scoreScreen = sb.instantiateViewController(identifier: "Score") as! AchievementViewController
             scoreScreen.score2 = Score.text
             self.navigationController?.pushViewController(scoreScreen, animated: true)
 
         }else{
-        
+            
         if motion == UIEvent.EventSubtype.motionShake{
-               a += 1
-             Score.text = String(a)
+            a += 1
+            Score.text = String(a)
             UIView.animate(withDuration: 0.05, animations: {
-                           self.Score.layer.transform = CATransform3DMakeTranslation(0, self.y, 0)
+                self.Score.layer.transform = CATransform3DMakeTranslation(0, self.y, 0)
                 })
             }
-        
         }
-        
     }
     
-            
 }

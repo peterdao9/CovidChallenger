@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var homeTableView: UITableView!
     var stateImage: [String] = ["AU", "VIC", "NSW", "QLD", "SA", "NT", "WA", "TAS", "ACT"]
     var stateName: [String] = ["Australia", "Victoria", "New South Wales", "Queensland", "South Australia", "Northern Territory","West Australia", "Tasmania", "Australian Capital Territory"]
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Update the lastest COVID-19 news by states:"
+        return "Update the latest COVID-19 news by states:"
     }
 
 
@@ -82,9 +80,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true)
     }
-   
-    
-    
     
 }
 

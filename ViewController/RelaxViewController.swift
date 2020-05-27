@@ -22,8 +22,8 @@ class RelaxViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        PlayButton.layer.cornerRadius = 30
-        StopButton.layer.cornerRadius = 30
+        PlayButton.layer.cornerRadius = 33
+        StopButton.layer.cornerRadius = 33
         
         let path:String = Bundle.main.path(forResource: "(No Copyright) Relaxing", ofType: ".mp3")!
         let url:URL = URL(fileURLWithPath: path)
@@ -46,7 +46,6 @@ class RelaxViewController: UIViewController {
                 timer2 = nil
             }
         }
-        
     }
     
     @IBAction func playButton(_ sender: Any) {

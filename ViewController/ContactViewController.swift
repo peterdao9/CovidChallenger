@@ -38,13 +38,10 @@ class ContractViewController: UIViewController, MFMailComposeViewControllerDeleg
         controller.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func contactButton1(_ sender: Any) {
         if let phoneurl = URL(string: "TEL://000"){
             UIApplication.shared.open(phoneurl)
-            
         }
-        
     }
     
 }
