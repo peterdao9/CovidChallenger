@@ -25,8 +25,8 @@ class AchievementViewController: UIViewController {
         score.text = score2
         highestScore = UserDefaults()
         self.highScore = highestScore.string(forKey: "highestScore") ?? "0"
-        highest = Int(highScore)!
         
+        highest = Int(highScore)!
         if highest <= Int(score2)!{
             highest = Int(score2)!
         }
@@ -41,15 +41,13 @@ class AchievementViewController: UIViewController {
         highestScore.set(String(highest), forKey: "highestScore")
     }
     
-    
     @IBAction func ShareButton(_ sender: Any) {
         let renderer = UIGraphicsImageRenderer(size: view2.bounds.size)
         let screenImage = renderer.image { ctx in
             view2.drawHierarchy(in: view2.bounds, afterScreenUpdates: true)
         }
-        let content:String = "I got " + score2 + " point on Covid Challenger. You can update lastest Covid news, relax and overcome my score by this app."
-
         
+        let content:String = "I got " + score2 + " point on Covid Challenger. You can update latest Covid news, relax and overcome my score by this app."
         let vc = UIActivityViewController(activityItems: [content, screenImage], applicationActivities: [])
         if let popoverController = vc.popoverPresentationController{
             popoverController.sourceView = self.view
